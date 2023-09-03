@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music &nbsp; for everyone</title>
+    <!-- Font Awesome CDN Link for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Favicon Icon -->
+    <link rel="icon" href="./assets/logo.png"/>
+    <!-- Local style.css file-->
+    <link rel="stylesheet" href="style.css"/>
+    <!-- Before loading the page connect to Google APIs for Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Supply the Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Press+Start+2P&family=Roboto&family=Roboto+Serif&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <!-- sidebar..................................................................................  -->
+        <div class="sidebar">
+        <!-- nav................................................................................ -->
+            <div class="nav">
+                <div class="navoption">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="navoption search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+        <!-- library................................................................................... -->
+            <div class="library">
+                <div class="options">
+                    <div class="lib-options navoption">
+                        <img src="./assets/library_icon.png">
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i> &nbsp;
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+        <!-- library playlist, artist and podcast badges............................................. -->
+                <div class="badges">
+                    <button type="button" class="b navigation">Playlist</button>
+                    <button type="button" class="b">Artists</button>
+                </div>
+        <!--route ..................................................................................-->        
+                <div class="route">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <span>Alphabetical <i class="fa-solid fa-caret-down"></i></span>
+                </div>
+        <!-- artist list............................................................................ -->
+                <div class="artist-list">
+                    <div class="artist-info">
+                        <img src="./artistpics/a.r.rahman.jpeg">
+                        <span>
+                            <p class="artist-name">A.R. Rahman</p>
+                            <p class="category">Artist</p>
+                        </span>
+                    </div>
+
+                    <div class="artist-info">
+                        <img src="./artistpics/amandhattarwal-hustlers.jpeg">
+                        <span>
+                            <p class="artist-name">Aman Dhattarwal</p>
+                            <p class="category">Podcast</p>
+                        </span>
+                    </div>
+
+                    <div class="artist-info">
+                        <img src="./artistpics/arjitisingh.jpeg">
+                        <span>
+                            <p class="artist-name">Arijit Singh</p>
+                            <p class="category">Artist</p>
+                        </span>
+                    </div>
+
+                    <div class="artist-info">
+                        <img src="./artistpics/asseskaur-default.jpg">
+                        <span>
+                            <p class="artist-name">Assess Kaur</p>
+                            <p class="category">Artist</p>
+                        </span>
+                    </div>
+
+                    <div class="artist-info">
+                        <img src="./artistpics/badshah.jpeg">
+                        <span>
+                            <p class="artist-name">Badshah</p>
+                            <p class="category">Artist</p>
+                        </span>
+                    </div>
+
+                    <div class="artist-info">
+                        <img src="./artistpics/darshan-raval-.jpg">
+                        <span>
+                            <p class="artist-name">Darshan Raval</p>
+                            <p class="category">Artist</p>
+                        </span>
+                    </div>
+
+                    <div class="artist-info">
+                        <img src="./artistpics/jubin-nautiyal.jpg">
+                        <span>
+                            <p class="artist-name">Jubin Nautiyal</p>
+                            <p class="category">Artist</p>
+                        </span>
+                    </div>
+
+                    <div class="artist-info">
+                        <img src="./artistpics/lata mangsehkar ji.jpeg">
+                        <span>
+                            <p class="artist-name">Lata Mangeshkar</p>
+                            <p class="category">Artist</p>
+                        </span>
+                    </div>
+
+                    <div class="artist-info">
+                        <img src="./artistpics/palak muchhal.jpg">
+                        <span>
+                            <p class="artist-name">Palak Muchhal</p>
+                            <p class="category">Artist</p>
+                        </span>
+                    </div>
+
+                    <div class="artist-info">
+                        <img src="./artistpics/payaldev.jpeg">
+                        <span>
+                            <p class="artist-name">Payal Dev</p>
+                            <p class="category">Artist</p>
+                        </span>
+                    </div>
+                    <br><br>
+                </div>
+    </div>
+</div>
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+                    <img src="./assets/backward_icon.png"/>
+                    <img src="./assets/forward_icon.png" class="hide"/>
+                </div>
+
+               <div class="sticky-nav-options">
+                    <button class="badge hide" style="background-color: white; color:black;">Explore Premium</button>
+                    <button class="badge dark-badge"><i class="fa-regular fa-circle-down"></i> Install App</button>
+                    <i class="fa-regular fa-user" id="user-icon"></i>
+               </div> 
+            </div>
+    <!-- cards ............................................................................... -->
+            <div class="cards">
+                <h2>Recently Played</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="./assets/dil-nu-dildaar-song.jpeg">
+                        <p class="card-title">Dil Nu Dildaar</p>
+                        <p class="card-info">Yasser Desaie, Sanjeev Chaturvedi, Mann Taneja</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/tere-vaste-song.jpeg">
+                        <p class="card-title">Tere Vaaste</p>
+                        <p class="card-info">Varun Jain, Sachin-Jigar, Amitabh-Bhattacharya</p>
+                    </div>
+
+                </div>
+
+                <h2>Episodes for you</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="./assets/smridbhagwadgeeta.jpeg">
+                        <p class="card-title">SHRIMAD BHAGWAD GITA</p>
+                        <p class="card-info">Jul 2021 - 800 min</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/Guru Purnima.jpeg">
+                        <p class="card-title">Guru Purnima with Sadhguru</p>
+                        <p class="card-info">3 Jul - 111 min</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/Pride-Month.jpg">
+                        <p class="card-title">PRIDE MONTH</p>
+                        <p class="card-info">28 Jun - 83 min</p>
+                    </div>
+                </div>
+
+                <h2>Made for Nikki</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="./assets/dailymix1.jpeg">
+                        <p class="card-title">Daily Mix 1</p>
+                        <p class="card-info">BHAJANIA GHAR, Sachet Tandon, Arjun Kanungo</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/dailymix2.jpeg">
+                        <p class="card-title">Daily Mix 2</p>
+                        <p class="card-info">Diljit Dosanjh, Jass Mank, Mankrit Aulakh, Sachet....</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/discover weekly.jpeg">
+                        <p class="card-title">Discover Weekly</p>
+                        <p class="card-info">Your weekly mixtape of fresh music. Enjoy new...</p>
+                    </div>
+                </div>
+
+                <h2>Popular albums</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="./assets/phir aur kya chahiye.jpeg">
+                        <p class="card-title">Phir Aur Kya Chahiye</p>
+                        <p class="card-info">Sachin Jigar, Arijit Singh, Amitabh-Bhattacharya</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/champagnetalk.jpeg">
+                        <p class="card-title">Champagne Talk</p>
+                        <p class="card-info">King</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/obsessed.jpeg">
+                        <p class="card-title">Obsessed  </p>
+                        <p class="card-info">Riar Saab, Abhijay Sharma</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/stillrolen.jpeg">
+                        <p class="card-title">Still Rolen</p>
+                        <p class="card-info">Shubh</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/tere-vaste-song.jpeg">
+                        <p class="card-title">Tere Vaaste</p>
+                        <p class="card-info">Varun Jain, Sachin-Jigar, Amitabh-Bhattacharya</p>
+                    </div>
+                </div>
+
+                <h2>Trending now near you</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="./assets/mahiya jinna sohna.jpeg">
+                        <p class="card-title">Mahiya Jinna Sohna</p>
+                        <p class="card-info">Darshan Raval</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/yaar ka sataya hua.jpeg">
+                        <p class="card-title">Yaar Ka Sataya Hua</p>
+                        <p class="card-info">B Praak, Jaani</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/naseeb se.jpeg">
+                        <p class="card-title">Nasseb Se</p>
+                        <p class="card-info">Payal Dev, Vishal Mishra, A.M. Turaz</p>
+                    </div>
+                </div>
+
+                <h2>Mood</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="./assets/Happyfav.jpeg">
+                        <p class="card-title">Happy Favorites</p>
+                        <p class="card-info">Put a smile on your face with these happy tunes</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/upliftingsouldclassic.jpeg">
+                        <p class="card-title">Uplifting Soul Classics</p>
+                        <p class="card-info">Whenever you need a soulful boost</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/chillofstudybeats.jpeg">
+                        <p class="card-title">chill lofi study beats</p>
+                        <p class="card-info">The perfect study beats. Find your focus.</p>
+                    </div>
+                </div>
+
+                <div class="footer">
+                    <div class="line"></div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="music-player">
+            <div class="albums">
+                <img src="./assets/dil-nu-dildaar-song.jpeg" class="curr-played-song"/>
+                <span>
+                    <p class="song-name">Dil Nu Dildaar</p>
+                    <p class="artist-name">Yasser Desai, Sanjeev Chaturvedi</p>
+                </span>
+                <img src="./album_control_assets/album_icon1.png" class="album-icon"/>
+                <img src="./album_control_assets/album_icon2.png" class="album-icon" style="height:2rem;"/>
+            </div>
+            <div class="player">
+                <div class="player-controls">
+                    <img src="./assets/player_icon1.png" class="player-control-img"/>
+                    <img src="./assets/player_icon2.png" class="player-control-img"/>
+                    <img src="./assets/player_icon3.png" class="player-control-img" style="opacity:1; height:2rem;"/>
+                    <img src="./assets/player_icon4.png" class="player-control-img"/>
+                    <img src="./assets/player_icon5.png" class="player-control-img"/>
+                </div>
+                <div class="playback-bar">
+                    <span class="time">0.00</span>
+                    <input type="range" min="0" max="100" class="progress-bar" step="1" value="0">
+                    <span class="time">3.06</span>
+                </div>
+            </div>
+            <div class="controls">
+                <img src="./album_control_assets/controls_icon1.png" style="height:2.2rem;"/>
+                <img src="./album_control_assets/controld_icon2.png" style="height: 2.2rem;"/>
+                <img src="./album_control_assets/controls_icon3.png" style="height:1.3rem;" class="ctrlimg" />
+                <img src="./album_control_assets/controls_icon4.png" style="height:1rem;" class="ctrlimg"/>
+                <img src="./album_control_assets/controls_icon5.png" style="height: 2.5rem;"/>
+                <input type="range" min="0" max="100" class="progress-bar" step="1" style="width:30%; margin-right:1.5rem;">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

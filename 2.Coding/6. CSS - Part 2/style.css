@@ -1,0 +1,102 @@
+/* Universal Selector */
+* {
+    font-family:-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+/* Element Selector */
+h1, h3 {
+    color: #b92b26 !important;
+}
+
+/* Id Selector */
+#login{
+    background-color: blue;
+}
+#signup{
+    background-color: blue; 
+}
+
+/* Class selector */
+.upvote{
+    color:white;
+    background-color:#b92b26;
+}
+
+/* descendant selector */
+p a{
+    color: purple;
+    background-color: plum;
+}
+nav li a{
+    color: white ;
+    background-color: #b92b26;  
+}
+main p{
+    color: rgb(107, 10, 10); 
+}
+
+/* sibling combinator */
+p+h3{
+    text-decoration: underline;
+}
+
+.upvote+button{
+    background-color:#b92b26;
+    color: white;
+}
+span>button{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+div>input{
+    background-color: darkgrey;
+}
+
+/* attribute selector */
+a[href= "/bob"]{
+    text-decoration: overline underline; 
+}
+
+/* Practice q14 */
+ div[id="myId"] p{
+    color:green;
+}
+
+/* Pseudo Class------ hover class */
+button:hover{
+    background-color: green;
+}
+
+/* Pseudo ---- active class */
+button:active{
+    background-color:rgb(107, 81, 47) ;
+    color: red; 
+}
+
+p:active{
+     color: red;
+     font-weight: bold;
+}
+/* Pseudo--- checked class */
+input[type="checkbox"]:checked + label{
+    color: red;
+    font-weight: bold;
+}
+
+/* Pseudo --- nth-of-type */
+div:nth-of-type(1){
+    background-color: antiquewhite;
+}
+
+/* Pseudo Elements-- first-letter */
+h3::first-letter{
+    color: rgb(126, 58, 58);
+}
+/* first-line pseudo element */
+p::first-line{
+    color: green;
+}
+/* selection-- pseudo element */
+label[for="student"]::selection{
+    background-color: green;
+}

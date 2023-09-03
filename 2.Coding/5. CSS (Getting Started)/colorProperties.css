@@ -1,0 +1,19 @@
+h1{
+    color:darkblue;
+    background-color: cadetblue;
+}
+h2{
+    color:darkgoldenrod;
+    background-color: burlywood;
+}
+button{
+    color:white;
+    background-color: blue;
+}
+p{
+    color:rgb(255,0,0);
+}
+h3{
+    color: #00f;
+    background-color: #000;
+}

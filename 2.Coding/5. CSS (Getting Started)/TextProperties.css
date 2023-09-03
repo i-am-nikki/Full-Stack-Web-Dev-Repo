@@ -1,0 +1,35 @@
+h1{
+    text-align: center;
+    font-weight: 900;
+    text-decoration:  red underline overline double;
+    letter-spacing: 5px;
+    font-size:30px;
+    font-family:imapct;
+    color: rgb(211, 79, 18);
+}
+h3{
+    text-align: right;
+    text-decoration: rgb(148, 0, 99) underline overline double;
+    font-family: avant, grade, didot, sans-serif;
+}
+p{
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 2.5;
+    font-family: arial;
+    font-size: 10px;
+}
+h4{
+    text-align: right;
+    text-decoration: overline underline wavy; 
+}
+a{
+    text-decoration: none;
+}
+textarea{
+    text-align: center;
+    width: 100%;
+}
+button{
+    width: 100%;
+}

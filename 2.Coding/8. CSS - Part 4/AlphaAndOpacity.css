@@ -1,0 +1,27 @@
+#alpha{
+    height:200px;
+    width:200px;
+    background-color: rgba(255,0,255,0.5);
+}
+#opacity{
+    height:200px;
+    width:200px;
+    background-color: rgba(0,255,255,0.5);
+    opacity:1;
+}
+
+div{
+    height:500px;
+    width:800px;
+    background-color: #7a5656;
+    margin: 10px auto;
+    background-image: url("premium_photo.avif");
+    background-size: cover;
+    
+}
+h3{
+    text-align: center;
+    text-decoration:underline double;
+    color:red;
+    padding:300px;
+}

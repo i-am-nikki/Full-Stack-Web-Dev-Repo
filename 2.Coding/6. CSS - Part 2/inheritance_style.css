@@ -1,0 +1,14 @@
+div{
+    background-color:#F8AFA6;
+}
+input, button{
+    background-color: inherit;
+}
+p{
+    color: red;
+    background-color: #F79489;
+}
+h1{
+    color:red;
+    background-color: #F8AFA6;
+}

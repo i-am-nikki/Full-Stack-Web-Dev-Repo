@@ -1,0 +1,35 @@
+.box{
+    width:100px;
+    height:100px;
+    background-color: black;
+    color:white;
+    
+    /* animation-name: width,fontsize;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+
+    /* animation shorthand .......................................................*/
+    animation: width 2s linear 0s infinite normal, fontsize 2s linear 0s infinite normal ;
+}
+
+@keyframes width {
+    from{
+        width:0px;
+    }
+    to{
+        width:100%;
+    }
+}
+
+@keyframes fontsize {
+    from{
+        font-size:normal;
+        color: white;
+    }
+    to{
+        font-size: 5rem;
+        color:darkgrey;
+    }
+}

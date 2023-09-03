@@ -1,0 +1,79 @@
+/* Global styles */
+body {
+    text-align: center;
+    background-color: black;
+}
+
+/* Styling for the main heading */
+h1 {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to bottom, #f12711, #f5af19);
+}
+
+/* Styling for the secondary heading */
+h2 {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #EDE574, #ACBB78);
+}
+
+/* Styling for game buttons */
+.btn {
+    height: 150px;
+    width: 150px;
+    border: 5px solid black;
+    border-radius: 20%;
+    margin: 2px;
+    cursor: grab;
+    user-select: none;
+}
+
+/* Flexbox layout for button containers */
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Button color styles */
+.witching-hour {
+    background: linear-gradient(to right, #c31432, #240b36);
+}
+
+.kyoo-pal {
+    background: linear-gradient(to right, #dd3e54, #6be585);
+}
+
+.by-design {
+    background: linear-gradient(to right, #009FFF, #ec2F4B);
+}
+
+.wiretap {
+    background: linear-gradient(to right, #8A2387, #E94057, #F27121);
+}
+
+.flash {
+    background: linear-gradient(to right, #f12711, #f5af19);
+}
+
+/* Styling for the flashing effect */
+.start-btn {
+    height: 30px;
+    width: 85px;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, #f12711, #f5af19);
+    padding-top: 7px;
+    color: #0f0c29;
+    font-weight: 800;
+    font-size: 20px;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Flexbox layout for the "Start" button container */
+.start-btn-container {
+    display: flex;
+    justify-content: center;
+}

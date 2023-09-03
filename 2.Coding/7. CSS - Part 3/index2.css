@@ -1,0 +1,39 @@
+h1{
+    display : inline; 
+    background-color: brown;
+    color:aliceblue;
+    margin: 2px;
+}
+span{
+    margin: 2px;
+}
+
+#span{
+    background-color: none;
+    padding: 50px;
+    margin: 50px;
+    height: 100px;
+    width: 200px;
+    border: 2px solid black;
+    color: blue;
+    height: 100px;
+}
+
+#spn{
+    background-color: none;
+    height: 500px;
+    display: inline;
+    margin: 50px;
+    padding: 50px;
+    border: 2px solid black;    
+    color: blue;
+}
+
+.inlneblck{
+    display: inline-block;  
+    border: 2px solid black;
+    height:100px;
+    width:100px;
+    margin: 50px;
+    background-color: lime;
+}

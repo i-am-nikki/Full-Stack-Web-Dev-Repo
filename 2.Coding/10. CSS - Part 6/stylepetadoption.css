@@ -1,0 +1,39 @@
+#sitename{
+    color:#d33535;
+}
+h1 span{
+    color:#854c4c;
+}
+
+img{
+    height:250px;
+    width:400px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+#pets{
+    height:500px;
+    width:400px;
+    display:flex;
+    position:relative;
+}
+@media (max-width: 375px) {
+  #pets {
+    flex-wrap: wrap;
+  }
+}
+
+.card{
+    border:2px solid black;
+    border-radius:20px;
+    padding: 10px;
+    position:absolute;
+    left:190px;
+}
+h4 {
+  text-align: right;
+  color: #3c787e;
+}
+#cat{
+margin-left: 150%;
+}

@@ -1,0 +1,41 @@
+.container{
+    width:600px;
+    height:300px;
+    background-color: yellow;
+    display:grid;
+    /* grid-template-rows: 50px 50px 50px ;
+    grid-template-columns: 200px 200px 200px; */
+    grid-template-rows: repeat(3,1fr);
+    /* grid-template-columns: repeat(3,1fr); */
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-gap: 5px; */
+    justify-items:center;
+    align-items:center;
+    
+}
+.item{
+    width:100px;
+    height:50px;
+    background-color: greenyellow;
+    border:2px solid black;
+    text-align: center;
+
+}
+
+#one{
+    grid-column: 1/2;
+   
+}
+.medque{
+    @media (max-width:500px) {
+        background-color:red;
+        color:white;
+    }
+    @media (min-width:400px) and (max-width:500px){
+        background-color:yellow;
+    }
+    @media(orientation: landscape){
+        background-color: crimson;
+        color:cyan;
+    }
+}

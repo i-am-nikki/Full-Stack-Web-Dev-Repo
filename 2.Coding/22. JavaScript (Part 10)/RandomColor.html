@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Color Generator</title>
+</head>
+<style>
+    div {
+        height: 400px;
+        width: 1000px;
+        border: black solid 2px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    body {
+        text-align: center;
+    }
+
+    button {
+        border: none;
+        border: 1px solid black;
+        border-radius: 40px;
+        transform: scale(1.4);
+        transition: transform 0.1s;
+    }
+
+    button:hover {
+    transform: scale(1.41); /* Enlarge the button slightly on hover */
+}
+</style>
+
+<body>
+    <h1>GENERATE A RANDOM COLOR</h1>
+    <button>Generate Color</button>
+    <br><br>
+    <div><b>Click Generate Color to reveal random color here.</b></div>
+    <script src="RandomColor.js"></script>
+</body>
+
+</html>
