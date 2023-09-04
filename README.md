@@ -18,6 +18,6 @@ This is the repository of my full stack web development journey progress. Feel f
 1. SQL
 2. MongoDB
 
-#Author 
-Nikki
+# Author 
+Nikki  
 [@i-am-nikki(Github Account)](https://github.com/i-am-nikki/)
