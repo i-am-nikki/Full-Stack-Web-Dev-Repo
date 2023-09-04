@@ -10,7 +10,7 @@ This is the repository of my full stack web development journey progress. Feel f
 5. Tailwind CSS
 6. React
 
-### fOR BACKEND
+### FOR BACKEND
 1. Express.js
 2. Node.js
 
@@ -19,4 +19,5 @@ This is the repository of my full stack web development journey progress. Feel f
 2. MongoDB
 
 #Author 
-Nikki [@i-am-nikki(Github Account)](https://github.com/i-am-nikki/)
+Nikki
+[@i-am-nikki(Github Account)](https://github.com/i-am-nikki/)
