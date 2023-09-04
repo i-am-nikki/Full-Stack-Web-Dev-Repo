@@ -1,7 +1,7 @@
 # Full_Stack_Web_Dev_Repo
 This is the repository of my full stack web development journey progress. Feel free to contribute and give feedback.
 
-## Technology Using
+# Technology Using
 ### FOR FRONTEND
 1. HTML
 2. CSS
@@ -19,5 +19,5 @@ This is the repository of my full stack web development journey progress. Feel f
 2. MongoDB
 
 # Author 
-Nikki  
+**Nikki**  
 [@i-am-nikki(Github Account)](https://github.com/i-am-nikki/)
