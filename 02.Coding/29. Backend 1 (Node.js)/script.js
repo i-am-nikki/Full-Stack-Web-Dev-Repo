@@ -26,6 +26,27 @@ then it will come along with those 2 values. and we can use those arguments now.
 
 //Acquiring all the info of Fruits named directory here..
 
-const info = require("./Fruits");
-console.log(info);
-console.log("0th index file with name var-->", info[0].name);
+// const info = require("./Fruits");
+// console.log(info);
+// console.log("0th index file with name var-->", info[0].name);
+
+// const figlet = require("figlet");
+
+// //copied the below code from
+// //https://www.npmjs.com/package/figlet
+// figlet("NIKKI MALIK", function (err, data) {
+//     if (err) {
+//       console.log("Something went wrong...");
+//       console.dir(err);
+//       return;
+//     }
+//     console.log(data);  
+//   });
+
+
+//Importing the math.js instead or requiring....
+import {sum,mul,PI,g} from "./math.js"
+
+console.log(sum(1,2), mul(2,4), PI, g);
+import { generate, count } from "random-words";
+console.log(generate());

@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "give-me-a-joke": "^0.5.1",
+    "random-words": "^2.0.0"
+  },
+  "name": "newpackage",
+  "version": "1.0.0",
+  "description": "This is new package for math.js file importation to script.js ",
+  "main": "math.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nikki",
+  "license": "ISC",
+  "type": "module"
+}
