@@ -1,0 +1,24 @@
+<!-- Can create html and js mix code in this ejs file. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<body>
+    <h1>This is a home page.</h1>
+
+<!-- Creating dynamic HTML, 
+it'll evaluate first & final output will be an HTML string coz it is HTML escaped-->
+    <h3><%= 1+2 %> 
+        <%= "apnacollege".toUpperCase() %>
+        <%= ["hello", "namaste"][0] %>
+    </h3> 
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Neque fugiat a saepe, ea voluptate veniam illum eos ut ducimus ex, quasi ad 
+         beatae cupiditate excepturi corrupti dignissimos porro ullam.</p>
+    <button> Click Me </button>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("includes/head.ejs"); %> <!--Never add slash(/) before includes here.-->
+
+<body>
+    <!-- <h2>This page belongs to @%= username %> </h2> -->
+    <h2>This page belongs to @<%= data.name %> </h2>
+    <button>Follow</button>
+    <button>Message</button>
+    <p>Followers: <%= data.followers %> &nbsp;
+    Followers: <%= data.following %></p>
+    <hr>
+
+    <% for(let post of data.posts){ %>
+        <!-- we have to write ejs tags for post.image so that ejs don't treat them like a string but a var. -->
+        <img src="<%= post.image %>" alt="some-img">
+        <p>Likes: <%= post.likes %> &nbsp;
+            Comments: <%= post.comments %></p>
+   <% } %>
+   
+
+    <!-- <h3>
+        Accounts that follow you :
+    </h3> -->
+    <!-- <ul>
+        % for(let i=0; i<=followersarr.length-1; i++){ %>
+            <li>%=followersarr[i]%></li>
+        % } %>
+    </ul> -->
+    <%- include("includes/footer.ejs") %>
+</body>
+<script src="/app.js"></script>
+</html>
+

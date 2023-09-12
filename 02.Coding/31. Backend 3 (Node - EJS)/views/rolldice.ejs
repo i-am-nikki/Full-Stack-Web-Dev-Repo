@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("includes/head.ejs"); %>
+<body>
+    <h1>Dice gave value :
+         <!-- Math.floor(Math.random() * 6) + 1 
+         num  -->
+       <%= diceVal %>
+<!-- This is how we can embed our conditional statment into our ejs templates -->
+        <% if(diceVal == 6){ %>
+            <h2>Nice! Roll dice Again.</h2>
+        <% } %>
+    </h1>
+
+    <%- include("includes/footer.ejs") %>
+</body>
+</html>
