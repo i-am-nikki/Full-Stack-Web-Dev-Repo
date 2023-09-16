@@ -1,4 +1,4 @@
-# Full_Stack_Web_Dev_Repo
+# Full Stack Web Development Repository
 
 Welcome to my full-stack web development journey repository. Your contributions and feedback are highly appreciated.
 
@@ -42,6 +42,7 @@ If you'd like to contribute to this repository, follow these steps:
 
 # Author 
 **Nikki**  
-[@i-am-nikki(Github Account)](https://github.com/i-am-nikki/)
+[@i-am-nikki(Github Account)](https://github.com/i-am-nikki/)  
+[@i-am-nikki(LinkedIn Account)](https://www.linkedin.com/in/i-am-nikki/)  
 
 Thank you for being a part of this journey. Together, we can learn and grow in the world of web development.
