@@ -41,11 +41,8 @@ If you'd like to contribute to this repository, follow these steps:
 2. **MongoDB:** A NoSQL database for scalable and flexible data storage.
 
 # Author 
-**Nikki**  
-<hr>
-
-![Github-Logo](https://github.com/i-am-nikki/Full_Stack_Web_Dev_Repo/assets/80262080/c0465f16-2e6a-4bce-9b13-d030072c5a55)[Github](https://github.com/i-am-nikki/) &nbsp; &nbsp; ![LinkedIn-Logo](https://github.com/i-am-nikki/Full_Stack_Web_Dev_Repo/assets/80262080/2e4698f9-b01a-413b-935e-e56c8fdec259) [LinkedIn](https://www.linkedin.com/in/i-am-nikki/)  
+**Nikki (2023)**, "Thank you for being a part of this journey. Together, we can learn and grow in the world of web development"  
 
 <hr>  
 
-Thank you for being a part of this journey. Together, we can learn and grow in the world of web development.
+![Github-Logo](https://github.com/i-am-nikki/Full_Stack_Web_Dev_Repo/assets/80262080/c0465f16-2e6a-4bce-9b13-d030072c5a55)[Github](https://github.com/i-am-nikki/) &nbsp; &nbsp; ![LinkedIn-Logo](https://github.com/i-am-nikki/Full_Stack_Web_Dev_Repo/assets/80262080/2e4698f9-b01a-413b-935e-e56c8fdec259) [LinkedIn](https://www.linkedin.com/in/i-am-nikki/)  
