@@ -42,7 +42,6 @@ If you'd like to contribute to this repository, follow these steps:
 
 # Author 
 **Nikki**  
-[@i-am-nikki](https://github.com/i-am-nikki/)![Github-Logo](https://github.com/i-am-nikki/Full_Stack_Web_Dev_Repo/blob/main/assets/Github-Logo.png?raw=true)  
-[@i-am-nikki](https://www.linkedin.com/in/i-am-nikki/)![Linkedin-Logo](https://github.com/i-am-nikki/Full_Stack_Web_Dev_Repo/blob/main/assets/Linkedin%20Logo.jfif?raw=true)  
+![Github-Logo](https://github.com/i-am-nikki/Full_Stack_Web_Dev_Repo/assets/80262080/c0465f16-2e6a-4bce-9b13-d030072c5a55)[Github](https://github.com/i-am-nikki/) &nbsp; &nbsp; ![LinkedIn-Logo](https://github.com/i-am-nikki/Full_Stack_Web_Dev_Repo/assets/80262080/2e4698f9-b01a-413b-935e-e56c8fdec259) [LinkedIn](https://www.linkedin.com/in/i-am-nikki/)  
 
 Thank you for being a part of this journey. Together, we can learn and grow in the world of web development.
