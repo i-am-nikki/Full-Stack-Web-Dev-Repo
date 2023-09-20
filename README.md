@@ -4,7 +4,7 @@ Welcome to my full-stack web development journey repository. Your contributions 
 
 ## Directory Structure
 
-1. **Delta Batch**
+1. **Notes & PQs**
     - This directory contains important notes on various technologies and their corresponding assignment questions with answers.
 
 2. **Coding**
