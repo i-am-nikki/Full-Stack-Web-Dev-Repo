@@ -1,0 +1,6 @@
+CREATE DATABASE del_app;
+USE del_app;
+
+CREATE TABLE temp(
+	id INT PRIMARY KEY
+);
