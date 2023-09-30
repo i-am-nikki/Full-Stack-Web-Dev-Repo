@@ -1,5 +1,5 @@
 const { faker } = require('@faker-js/faker');
-const mysql = require('mysql2');
+const mysql = require('mysql2'); //.mysql2 package is used to establish connection between js files and sql db.
 
 const connection = mysql.createConnection({
     host: 'localhost',
@@ -8,11 +8,14 @@ const connection = mysql.createConnection({
     password: 'MySQL@123#'
 });
 
+let q= "SHOW TABLES";
 // .query object work is to run any query on database.
 try{
-    connection.query("SHOW TABLES", (err, result) =>{
+    connection.query(q, (err, result) =>{
         if(err) throw err;
         console.log(result);
+        console.log(result.length);
+        console.log(result[0]);
     });
 } catch (err){
     console.log(err);
