@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Username</title>
+</head>
+
+<body>
+    <h2>You are about to edit this User: <%= user.email %>
+    </h2>
+    <!--As we can't send patch request from form so we will install method-override package-->
+    <form method="post" action="/user/<%= user.id%>?_method=PATCH">
+        <textarea name="username"><%= user.username %></textarea>
+        <input type="password" name="password" placeholder="Enter Password">
+        <button>Edit</button>
+    </form>
+</body>
+
+</html>
