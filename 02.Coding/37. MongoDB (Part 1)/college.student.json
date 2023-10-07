@@ -1,0 +1,46 @@
+[{
+  "_id": {
+    "$oid": "6520af2b3f6273324f40c5ba"
+  },
+  "name": "adam",
+  "age": 19,
+  "marks": 89,
+  "city": "Mysore"
+},
+{
+  "_id": {
+    "$oid": "6520b0513f6273324f40c5bc"
+  },
+  "name": "bob",
+  "city": "Chandigarh",
+  "marks": 99,
+  "age": 17
+},
+{
+  "_id": {
+    "$oid": "6520b7a94414a96641f07ea0"
+  },
+  "name": "catlyn",
+  "age": 24,
+  "city": "Delhi",
+  "marks": "85"
+},
+{
+  "_id": {
+    "$oid": "6520b7a94414a96641f07ea1"
+  },
+  "name": "donald",
+  "age": 23,
+  "city": "Mumbai",
+  "marks": "85"
+},
+{
+  "_id": {
+    "$oid": "6521822b16c9b9ed7a174f6a"
+  },
+  "name": "Krishna",
+  "performance": {
+    "marks": "10 CGPA",
+    "grade": "A"
+  }
+}]
