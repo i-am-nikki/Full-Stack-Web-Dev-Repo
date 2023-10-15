@@ -1,0 +1,30 @@
+body{
+    margin: 1.5%;
+}
+form{
+    margin-left: 1.5%;
+}
+.chat {
+    background-color: darkslategray;
+    color:lightgreen;
+    width: 38%;
+    border-radius:4px;
+    padding: 0.5%;
+    margin: 1.5%;
+}
+
+h3{
+    color: whitesmoke;
+    width: 2.6em;
+    background-color: darkslategray;
+    margin-left: 17.5%;
+    border-radius:0.25rem;
+}
+
+.msg{
+    background-color: lightslategray;
+    width:20rem;
+    padding: 0.5%;
+    margin: 1.5%;
+    border-radius:1rem;
+}
