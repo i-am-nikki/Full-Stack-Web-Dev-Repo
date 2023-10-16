@@ -19,10 +19,16 @@
             <p>From: <i><%= chat.from %></i></p>
             <div class = "msg">
                 <p><%= chat.msg %></p>
+                <form method="GET" action="/chats/<%=chat._id %>/edit">
+                    <button>Edit</button>
+                </form>
+                <form method="POST" action="/chats/<%=chat._id %>?_method=DELETE">
+                    <button class="delete">Delete</button>
+                </form>
             </div>
-            <p>Recieved By:<i> <%= chat.to %></i></p>
-            <p>Created At:<i> <%= chat.created_at %></i></p>
-        
+            <p>Recieved By:<i> <%= chat.to %></i></p> <hr>
+            <p> <%= chat.created_at.toString().split(" ")[4] %></p>
+            <p> <%= chat.created_at.toString().split(" ").slice(0, 4).join("-") %></p>
         </div>
    <% } %>
 </body>
