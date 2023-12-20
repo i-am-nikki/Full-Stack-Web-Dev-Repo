@@ -58,6 +58,7 @@ passport.deserializeUser(User.deserializeUser());
 app.use((req, res, next) =>{
     res.locals.success = req.flash("success");
     res.locals.error = req.flash("error");
+    res.locals.currUser = req.user;
     next();
 })
 
@@ -69,14 +70,14 @@ app.get("/", (req, res) => {
     res.send("Hi, I am root");
 });
 
-app.get("/registerUser", async(req,res) =>{
-    let Users = new User({
-        email: "nikki@gmail.com",
-        username:"nikki35"
-    });
-    let registeredUser = await User.register(Users, "password@1234#");
-    res.send(registeredUser);
-});
+// app.get("/registerUser", async(req,res) =>{
+//     let Users = new User({
+//         email: "nikki@gmail.com",
+//         username:"nikki35"
+//     });
+//     let registeredUser = await User.register(Users, "password@1234#");
+//     res.send(registeredUser);
+// });
 
 app.all("*", (req,res,next) =>{
     next(new ExpressError(404, "Page Not Found!"));
