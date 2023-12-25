@@ -11,16 +11,14 @@ const listingController = require("../controllers/listings.js");
 
 router.route("/")
 .get(wrapAsync (listingController.index)) //Index Route
-// .post(validateListing, isLoggedIn, wrapAsync(listingController.createListing)); //Create Route 
-.post(upload.single('listing[image]'), (req,res) => {
-res.send(req.file);
-})
+.post( isLoggedIn, upload.single('listing[image]'), validateListing, wrapAsync(listingController.createListing)); //Create Route 
+
 //new Route - to open the form to create new listing
 router.get("/new", isLoggedIn, listingController.renderNewForm);
 
 router.route("/:id")
 .get(wrapAsync(listingController.showListing)) //Show Route - to print all data of an individual listing
-.put(validateListing, isLoggedIn, isOwner, wrapAsync(listingController.updateListing)) //Update Route
+.put(isLoggedIn, isOwner, upload.single('listing[image]'), validateListing, wrapAsync(listingController.updateListing)) //Update Route
 .delete(isLoggedIn, isOwner, wrapAsync(listingController.destroyListing)); //Delete Route
 
 //Edit Route
