@@ -1,9 +1,9 @@
 import "./Product.css";
 
 function Product({title, price = 40, features=[]}){
-    
+    let styles = {backgroundColor: price>30000 ? "maroon": null};
     return(
-        <div className="Product">
+        <div className="Product" style={styles}>
         <h3>{title}</h3>
         <p>Price: {price}</p>
         <p>{features.map((feature) => (
