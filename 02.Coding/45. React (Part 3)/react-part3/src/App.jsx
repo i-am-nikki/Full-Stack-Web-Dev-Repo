@@ -1,6 +1,7 @@
 import './App.css'
 import Button from './Button'
 import Form from './Form'
+import Counter from './counter'
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
       <h4><u>React (Part-4)</u></h4>
       <Button/>
       <Form/>
+      <Counter/>
     </>
   )
 }
