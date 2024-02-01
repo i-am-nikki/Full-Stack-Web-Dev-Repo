@@ -1,0 +1,12 @@
+.ticket{
+    border: 5px solid blue;
+    border-radius: 14px;
+}
+
+h1{
+    color: yellow;
+}
+
+.buyNewTicket{
+    background-color: maroon;
+}

@@ -2,12 +2,12 @@ import { useState } from "react";
 import {v4 as uuidv4} from 'uuid';
 
 export default function ToDoList(){
-    let [todos, setTodos] = useState([{task: "Initial Task", id: uuidv4() }]);
+    let [todos, setTodos] = useState([{task: "Initial Task", id: uuidv4(), isDone:false }]);
     let [newTodo, setNewTodo] = useState("");
 
     let addNewTask = () =>{
         setTodos((prevTodos) => {
-            return [...prevTodos, {task: newTodo, id: uuidv4()}];
+            return [...prevTodos, {task: newTodo, id: uuidv4(), isDone: false}];
         });
         setNewTodo("");
     }
@@ -20,24 +20,51 @@ export default function ToDoList(){
         setTodos((prevTodos)=>todos.filter((prevTodos) => prevTodos.id!= id));
     }
 
-    let upperCaseAll = () =>{
+    // let upperCaseAll = () =>{
+    //     setTodos( (prevTodos) => (
+    //         prevTodos.map((todo) =>{
+    //         return {
+    //             ...todo,
+    //             task: todo.task.toUpperCase(),
+    //         };
+    //     })
+    //     ));
+    // }
+
+    let markAllDone = () =>{
         setTodos( (prevTodos) => (
             prevTodos.map((todo) =>{
             return {
                 ...todo,
-                task: todo.task.toUpperCase(),
+                isDone:true
             };
         })
         ));
     }
 
-    let upperCaseOne = (id) =>{
+    // let upperCaseOne = (id) =>{
+    //     setTodos( (prevTodos) => (
+    //         prevTodos.map((todo) =>{
+    //         if(todo.id === id)  {
+    //             return {
+    //                 ...todo,
+    //                 task: todo.task.toUpperCase(),
+    //             };
+    //         }else{
+    //             return todo;
+    //         }
+            
+    //     })
+    //     ));
+    // }
+
+    let markAsDone = (id) =>{
         setTodos( (prevTodos) => (
             prevTodos.map((todo) =>{
             if(todo.id === id)  {
                 return {
                     ...todo,
-                    task: todo.task.toUpperCase(),
+                    isDone:true
                 };
             }else{
                 return todo;
@@ -69,16 +96,18 @@ export default function ToDoList(){
             <ul>
                 {todos.map((todo) => ( //Read React documentation to know why map, filter and all are used here...
                     <li key={todo.id}>
-                        <span>{todo.task}</span>
+                        <span style={todo.isDone?{textDecorationLine: "line-through"}: {}}>{todo.task}</span>
                         &nbsp; 
                         <button onClick={()=> deleteTodo(todo.id)}>Delete</button>
                         &nbsp;
-                        <button onClick={()=> upperCaseOne(todo.id)}>UpperCase</button>
+                        {/* <button onClick={()=> upperCaseOne(todo.id)}>UpperCase</button> */}
+                        <button onClick={()=> markAsDone(todo.id)}>Mark As Done</button>
                     </li>
                 ))}
             </ul>
             <hr/>
-        <button onClick={upperCaseAll}>UpperCase All</button>    
+        {/* <button onClick={upperCaseAll}>UpperCase All</button>     */}
+        <button onClick={markAllDone}>Mark All Done</button>
         </div>
     )
 }
