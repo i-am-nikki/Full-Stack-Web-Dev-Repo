@@ -3,11 +3,15 @@ import Lottery from './Lottery'
 
 function App() {
   
-  return (
-   <>   
-   <Lottery/>
-   </>
-  )
-}
+  let winCondition = (ticket) => {
+    return ticket[0] === 0;
+  }
 
-export default App
+  return (
+    <>
+    <Lottery n={3} winCondition={winCondition}/>
+    </>
+   
+  )
+  }
+export default App;
