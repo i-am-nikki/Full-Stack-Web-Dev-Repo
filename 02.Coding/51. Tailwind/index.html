@@ -3,30 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwind CSS</title>
+    <title>Card using Tailwind CSS</title>
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <h1 class="underline pl-4 text-6xl italic font-bold text-center">Tailwind CSS</h1><br/>
-    <p class="font-sans">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-        Repudiandae, delectus. Et nostrum iure pariatur reiciendis
-         deserunt dolores sit, enim maxime doloremque ea hic, cupidit
-         ate harum ab error eos incidunt architecto!  
-    </p><br/>
-    <p class="font-serif">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-        Repudiandae, delectus. Et nostrum iure pariatur reiciendis
-         deserunt dolores sit, enim maxime doloremque ea hic, cupidit
-         ate harum ab error eos incidunt architecto!  
-    </p><br/>
-    <p class="font-mono">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-        Repudiandae, delectus. Et nostrum iure pariatur reiciendis
-         deserunt dolores sit, enim maxime doloremque ea hic, cupidit
-         ate harum ab error eos incidunt architecto!  
-    </p><br/>
-    <div class="bg-gray-500 w-1/2 h-34" >This is a div ---------- Lorem ipsum dolor sit amet consectetur adipisicing elit.
-         Quibusdam amet, ex labore cumque unde quia, cum quas consectetur laboriosam
-         molestiae quos! Pariatur illum perferendis, 
-        laudantium suscipit quasi doloremque voluptatibus! Possimus.
+    <div class="mt-20 mx-52 flex flex-wrap border-2 border-black rounded">
+        <!-- Quote Container -->
+        <div class="w-full rounded-t bg-gradient-to-r from-sky-500 to-indigo-500 text-white h-24 text-xl flex justify-center items-center font-bold ">News you can Trust. </div>
+        <!-- Content Container -->
+        <div class="text-center mt-6 w-full">
+            <h3 class="text-lg font-semibold">Stay up to date with with the Latest!</h3> 
+            <p>Subscribe to our newsletter for the latest news straight into your inbox </p>
+            <form class="flex flex-wrap">
+                <input placeholder="you@example.com" class="rounded w-full mx-80 bg-slate-200 text-center placeholder:text-sm my-4 py-2"/>
+                <button class="bg-blue-500 w-full text-white mx-80 py-2 rounded-full ">Subscribe Now</button>
+            </form>
+            <p class="mx-6 my-6 text-sm">We value your privacy </p>
+        </div>
     </div>
 </body>
 </html>
